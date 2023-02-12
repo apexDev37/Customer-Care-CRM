@@ -1,12 +1,17 @@
 <img src="./resources/images/logo.png" alt="Logo of the project" align="right">
 
-# Customer Care CRM &middot; 
+# Customer Care CRM &middot;
+[![Inline docs](https://inch-ci.org/github/dwyl/hapi-auth-jwt2.svg?branch=master)](https://github.com/apexDev37/Customer-Care-CRM/blob/master/README.md)
+[![Known Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/apexDev37/Customer-Care-CRM)](https://snyk.io/test/github/apexDev37/Customer-Care-CRM?targetFile=pom.xml)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-blue.svg)](http://makeapullrequest.com)
+[![Activity](https://img.shields.io/badge/status-active-brightgreen)](https://github.com/apexDev37/Customer-Care-CRM/commits/)
+[![Package Manager](https://img.shields.io/badge/Maven-4.0.0-blue)](https://maven.apache.org/download.cgi)
+[![JDK version](https://img.shields.io/badge/OpenJDK-19.0.2-blue)](https://jdk.java.net/19/)
 > Giving users a better 360 degree view of their customers with custom tools and features 
 
 Customer Care CRM is a web application that provides rich tools and features to enable customer care representatives and
-personnel to better interact and maintain customer relations through providing features to accomplish this goal. These 
-tools include audio voice recording and logging of customer emails and text messages to the central source and 
-interface.
+personnel to better interact and maintain customer relations. These tools include audio voice recording and logging of 
+customer emails and text messages to the central source and interface.
 
 **Goal**: To empower organizations to make informed and tactical decisions based on the analysis and assessment of 
 previous customer relations by recording voice call interactions with customers and persisting them for future access.
