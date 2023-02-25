@@ -36,6 +36,17 @@ Follow the commands to `clone` the repository, `build` a jar, and run it from th
 Once the application is running you can access it on the default port: http://localhost:8080/
 <img src="./resources/images/crm-home-page.png" alt="Root page of the project">
 
+## Developing
+
+### Built with
+| Purpose    | Name        | Version | Description                                                                 |
+|------------|-------------|---------|-----------------------------------------------------------------------------|
+| Packaging  | Maven       | 4.0.2   | Build system                                                                |
+| Language   | Java        | 17      | High-level programming language                                             |
+| Framework  | Spring Boot | 3.0.2   | Framework to create stand-alone, production-grade Spring based applications |
+
+A list of project dependencies can be viewed in the [pom.xml](pom.xml) in the project's root directory.
+
 ## Licensing
 
 For a repository to indeed be open source, you'll need to _license_ it so that others are free to use, change, and 
