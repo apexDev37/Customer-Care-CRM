@@ -1,4 +1,4 @@
-package com.apex.crm.orm;
+package com.apex.crm.orm.jpa;
 
 import com.apex.crm.orm.util.ArtifactForFramework;
 
