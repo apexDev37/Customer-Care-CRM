@@ -1,5 +1,6 @@
 package com.apex.crm.user;
 
+import com.apex.crm.orm.jpa.AbstractEntity;
 import jakarta.persistence.*;
 import jakarta.annotation.Nonnull;
 
@@ -8,10 +9,8 @@ import java.util.UUID;
 
 @Entity
 @Table(name = "crm_user")
-public class User {
+public class User extends AbstractEntity<UserId> {
 
-  @Id
-  private UUID id;
   private String email;
   private String password;
 
@@ -22,18 +21,14 @@ public class User {
 
   protected User() {}
 
-  public User(UUID id,
+  public User(UserId id,
               String email,
               String password,
               Set<UserRole> roles) {
-    this.id = id;
+    super(id);
     this.email = email;
     this.password = password;
     this.roles = roles;
-  }
-
-  public UUID getId() {
-    return id;
   }
 
   public String getEmail() {
