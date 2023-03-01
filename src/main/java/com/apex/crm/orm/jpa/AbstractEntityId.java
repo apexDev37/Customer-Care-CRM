@@ -11,7 +11,7 @@ import static com.google.common.base.MoreObjects.toStringHelper;
 
 @MappedSuperclass
 public abstract class AbstractEntityId<T extends Serializable>
-  implements Serializable {
+  implements Serializable, EntityId<T> {
 
   private T id;
 
@@ -22,15 +22,20 @@ public abstract class AbstractEntityId<T extends Serializable>
     this.id = Objects.requireNonNull(id);
   }
 
+  @Override
   public T getId() {
     return id;
+  }
+
+  @Override
+  public String asString() {
+    return id.toString();
   }
 
   @Override
   public boolean equals(Object o) {
     if (this == o) return true;
     if (o == null || getClass() != o.getClass()) return false;
-
     AbstractEntityId<?> that = (AbstractEntityId<?>) o;
     return id.equals(that.id);
   }
