@@ -1,6 +1,6 @@
 package com.apex.crm.orm;
 
-import com.apex.orm.util.ArtifactForFramework;
+import com.apex.crm.orm.util.ArtifactForFramework;
 
 import jakarta.persistence.MappedSuperclass;
 
@@ -25,7 +25,7 @@ public abstract class AbstractEntityId<T extends Serializable>
   public T getId() {
     return id;
   }
-  
+
   @Override
   public boolean equals(Object o) {
     if (this == o) return true;
